@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Macro Pulse | Vivek Gupta</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vivek Gupta | Economics – Macro Pulse</title>
+<meta name="keywords" content="Vivek Gupta, Vivek Gupta economics, Vivek Gupta macroeconomics, RBI repo rate, India inflation, macroeconomic dashboard India, Shiv Nadar Institution of Eminence economics, macroeconomics PhD India, household finance India, monetary policy shocks reading list"><meta name="description" content="Macro Pulse: RBI policy rates, India inflation, current economic events, global macro indicators and a shared reading list of papers, by Vivek Gupta at Shiv Nadar Institution of Eminence.">
+<meta property="og:title" content="Macro Pulse | Vivek Gupta, SNU Economics">
+<meta property="og:description" content="RBI policy rates, India inflation, current economic events, global macro indicators and a shared reading list of papers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vivekguptaecon.github.io/macro-pulse.html">
+<meta property="og:image" content="https://vivekguptaecon.github.io/images/vivek.jpg">
+<meta name="author" content="Vivek Gupta">
+<link rel="canonical" href="https://vivekguptaecon.github.io/macro-pulse.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
 <style>
-:root{--bg:#faf8f4;--card:#fff;--ink:#1b2a41;--mute:#6b7280;--line:#e5e0d6;--acc:#8c2f39;--acc2:#1f5f8b;--ev:#c58b1a}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141a24;--card:#1c2431;--ink:#e8e6e1;--mute:#98a2b3;--line:#2c3646;--acc:#e07a85;--acc2:#6bb0dc;--ev:#e3b24d}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif}
-a{color:inherit;text-decoration:none}
-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:16px 5vw;border-bottom:1px solid var(--line)}
-.brand b{font-size:1.15rem;display:block;line-height:1.2}.brand span{font-size:.78rem;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
-nav{display:flex;flex-wrap:wrap;gap:18px;font-size:.95rem}nav a{color:var(--mute)}nav a:hover,nav a.on{color:var(--acc);border-bottom:2px solid var(--acc)}
-main{max-width:1100px;margin:0 auto;padding:32px 5vw}
-.kick{color:var(--acc);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
-h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:.2rem 0 .4rem;line-height:1.2}
-.lead{color:var(--mute);max-width:640px;margin:0 0 20px}
+.mp{--bg:#faf8f4;--card:#fff;--ink:#1b2a41;--mute:#6b7280;--line:#e5e0d6;--acc:#8c2f39;--acc2:#1f5f8b;--ev:#c58b1a}
+.mp *{box-sizing:border-box}
 .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px}
-select,button{font:inherit;font-size:.9rem;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;cursor:pointer}
-button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.mp select,.mp button{font:inherit;font-size:.9rem;padding:6px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;cursor:pointer}
+.mp button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
 .stamp{margin-left:auto;font-size:.8rem;color:var(--mute)}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;border-top:3px solid var(--acc)}
@@ -28,48 +24,34 @@ button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;position:relative}
 .card h3{margin:0 0 2px;font-size:1rem}.card p{margin:0 0 6px;color:var(--mute);font-size:.8rem}
-svg{width:100%;height:auto;display:block;overflow:visible}
+.mp svg{width:100%;height:auto;display:block;overflow:visible}
 .tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:4px 9px;border-radius:5px;font-size:.78rem;display:none;z-index:9;font-family:system-ui,sans-serif}
-h2{margin:36px 0 12px;font-size:1.4rem;border-bottom:1px solid var(--line);padding-bottom:6px}
 .tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
 .tl li{position:relative;padding:2px 0 14px 20px}
 .tl li:before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--ev);border:2px solid var(--bg)}
 .tl b{color:var(--acc)}.tl em{font-style:normal;font-size:.7rem;border:1px solid var(--line);border-radius:10px;padding:0 8px;margin-left:6px;color:var(--mute);font-family:system-ui,sans-serif}
-.tl span{display:block;color:var(--mute);font-size:.9rem}
+.tl span{display:block;color:var(--mute);font-size:.9rem}.tl a{color:var(--acc);font-size:.8rem;margin-left:6px}
 .err{color:var(--acc);font-size:.85rem}
 .sub{font-size:.75rem;color:var(--mute);margin-top:2px;line-height:1.3}
-input,textarea{font:inherit;font-size:.9rem;padding:6px 10px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;width:100%}
-.bar input{width:auto;flex:1;min-width:160px}
+.mp input,.mp textarea{font:inherit;font-size:.9rem;padding:6px 10px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;width:100%}
+.mp .bar input{width:auto;flex:1;min-width:160px}
 .paper{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
 .paper b{display:block;line-height:1.35}.paper span{display:block;font-size:.85rem;color:var(--mute)}.paper i{display:block;font-size:.85rem;margin:6px 0}
 .paper em{font-style:normal;font-size:.7rem;border:1px solid var(--line);border-radius:10px;padding:0 8px;color:var(--mute);font-family:system-ui,sans-serif}.paper a{color:var(--acc);font-size:.85rem;margin-left:6px}
-.log{list-style:none;margin:8px 0 0;padding:0;font-size:.82rem;color:var(--mute)}.log b{color:var(--ink)}
 .f{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:10px}
-details{margin-top:14px}summary{cursor:pointer;color:var(--mute);font-size:.9rem}.tl a{color:var(--acc);font-size:.8rem;margin-left:6px}
 .defs{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;display:grid;gap:10px}
 .defs b{display:block;font-size:.85rem;color:var(--acc)}.defs span{font-size:.82rem;color:var(--mute);line-height:1.45}
-footer{text-align:center;color:var(--mute);border-top:1px solid var(--line);padding:24px 5vw;font-size:.85rem}
-footer q{display:block;font-style:italic;margin-bottom:8px}
-</style>
-</head>
-<body>
-<header>
-  <a class="brand" href="index.html"><b>Vivek Gupta</b><span>PhD Scholar · Economics</span></a>
-  <nav>
-    <a href="index.html">Home</a><a href="research.html">Research</a><a href="conference.html">Conference</a>
-    <a href="teaching.html">Teaching</a><a href="cv.html">CV</a><a href="extras.html">Extras</a><a class="on" href="macro-pulse.html">Macro Pulse</a>
-  </nav>
-</header>
-<main>
-  <div class="kick">Live macro monitor</div>
-  <h1>Macro Pulse</h1>
-  <p class="lead">Follow India's monetary policy, inflation and the wider global economy in one place. See where the RBI's policy rates stand, catch up on the latest economic developments, compare long-run trends across major economies, and browse or add to a shared reading list of papers worth your time.</p>
+.mp h3.sec{margin-top:36px}
+</style></head><body>
+<header><a class="brand" href="index.html">Vivek Gupta<small>PhD Scholar · Economics</small></a><nav><a href="index.html">Home</a><a href="research.html">Research</a><a href="conference.html">Conference</a><a href="teaching.html">Teaching</a><a href="cv.html">CV</a><a href="extras.html">Extras</a><a class="on" href="macro-pulse.html">Macro Pulse</a></nav></header>
+<main class="page mp"><h1>Macro Pulse</h1>
+<p class="mute">Follow India's monetary policy, inflation and the wider global economy in one place. See where the RBI's policy rates stand, catch up on the latest economic developments, compare long-run trends across major economies, and browse or add to a shared reading list of papers worth your time.</p>
 
-  <h2 style="margin-top:8px">India now · RBI &amp; prices</h2>
+  <h3>India now · RBI &amp; prices</h3>
   <div class="kpis" id="now"></div>
   <div class="grid"><div class="card" id="rbi"></div><div class="card"><h3>Current events</h3><p>Latest first · newest items from RBI, MoSPI and press</p><ul class="tl" id="news" style="margin-top:12px"></ul></div></div>
 
-  <h2>Global indicators</h2>
+  <h3 class="sec">Global indicators</h3>
   <div class="bar" id="bar">
     <select id="country"></select>
     <span id="ranges"></span>
@@ -79,7 +61,7 @@ footer q{display:block;font-style:italic;margin-bottom:8px}
   <div class="kpis" id="kpis"></div>
   <div class="grid" id="charts"></div>
 
-    <h2>Reading list · recent papers</h2>
+    <h3 class="sec">Reading list · recent papers</h3>
   <div class="bar"><input id="pq" placeholder="Search title, author, venue…"><select id="ptag"></select><button id="padd">+ Add a paper</button></div>
   <div class="card" id="pform" hidden>
     <div class="f"><input id="f_t" placeholder="Title"><input id="f_a" placeholder="Authors"><input id="f_y" placeholder="Year"><input id="f_v" placeholder="Venue / series"><input id="f_g" placeholder="Tag (e.g. Monetary policy)"><input id="f_u" placeholder="Link or papers/file.pdf"></div>
@@ -88,12 +70,9 @@ footer q{display:block;font-style:italic;margin-bottom:8px}
     <p class="sub" id="fmsg" style="margin-top:8px">Add a title, authors and a link to the paper. Submissions are visible to every visitor.</p>
   </div>
   <div class="grid" id="plist" style="margin-top:12px"></div>
-</main>
-<footer>
-  <q>Inflation is always and everywhere a monetary phenomenon.</q><span style="display:block;margin-bottom:8px;font-size:.8rem">— Milton Friedman</span>
-  Sources: RBI, MoSPI, World Bank Open Data · © 2026 Vivek Gupta
-</footer>
-<div class="tip" id="tip"></div>
+<p class="mute" style="text-align:center;margin-top:44px"><em>"Inflation is always and everywhere a monetary phenomenon."</em> — Milton Friedman<br><small>Sources: RBI, MoSPI, World Bank Open Data</small></p>
+<div class="tip" id="tip"></div></main>
+<footer><span>© 2026 Vivek Gupta</span><span><a href="mailto:vg995@snu.edu.in">vg995@snu.edu.in</a> · <a href="https://github.com/vivekecon">GitHub</a> · <a href="https://www.linkedin.com/in/vivek-gupta-5765b21a3">LinkedIn</a> · <a href="https://x.com/vivekguptaecon">X</a></span></footer>
 
 <script>
 /* ===== EDIT HERE: indicators, countries ===== */
